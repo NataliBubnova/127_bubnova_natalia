@@ -35,23 +35,12 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.Task2_Tests.selectionSort_GenerateSelectionSort_CompareLargeArrays">
-    <configuration name="Task2_Tests.selectionSort_CreateMySelectionSort_TryToSortArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Task2_Tests">
+    <configuration name="Task2_Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="task_2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task2_Tests" />
-      <option name="METHOD_NAME" value="selectionSort_CreateMySelectionSort_TryToSortArray" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task2_Tests.selectionSort_CreateMySelectionSort_TryToSortLargeArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="task_2" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Task2_Tests" />
-      <option name="METHOD_NAME" value="selectionSort_CreateMySelectionSort_TryToSortLargeArray" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -86,13 +75,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Task2_Tests.selectionSort_GenerateSelectionSort_SortTwoItemsArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task_2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task2_Tests" />
+      <option name="METHOD_NAME" value="selectionSort_GenerateSelectionSort_SortTwoItemsArray" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Task2_Tests" />
+        <item itemvalue="JUnit.Task2_Tests.selectionSort_GenerateSelectionSort_SortTwoItemsArray" />
         <item itemvalue="JUnit.Task2_Tests.selectionSort_GenerateSelectionSort_CompareLargeArrays" />
         <item itemvalue="JUnit.Task2_Tests.selectionSort_GenerateSelectionSort_SortLargeArray" />
         <item itemvalue="JUnit.Task2_Tests.selectionSort_GenerateSelectionSort_SortArray" />
-        <item itemvalue="JUnit.Task2_Tests.selectionSort_CreateMySelectionSort_TryToSortLargeArray" />
-        <item itemvalue="JUnit.Task2_Tests.selectionSort_CreateMySelectionSort_TryToSortArray" />
       </list>
     </recent_temporary>
   </component>

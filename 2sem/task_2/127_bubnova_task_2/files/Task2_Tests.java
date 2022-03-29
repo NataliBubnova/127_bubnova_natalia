@@ -106,6 +106,12 @@ public class Task2_Tests extends Assert {
         sorter.sort(myArray, new SomeComparator());
         assertArrayEquals(new Integer[]{1, 2, 3, 4, 5, 6, 9}, myArray);
     }
-    
+    @Test
+    public void selectionSort_GenerateSelectionSort_SortTwoItemsArray(){
+        SelectionSort<Integer> sorter = new SelectionSort<>();
+        Integer[] myArray = {4, 3};
+        sorter.sort(myArray, new SomeComparator());
+        assertArrayEquals(new Integer[]{3, 4}, myArray);
+    }
 }
 
