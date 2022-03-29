@@ -1,0 +1,2 @@
+QuickSort|12|int base = split(data, e, b); -> int base = split(data, b, e);|quickSort_GenerateQuickSort_SortTwoPositions
+QuickSort|24|swap(data, left, baseElem); -> swap(data, left - 1, baseElem);|quickSort_GenerateQuickSort_SortTwoPositions
