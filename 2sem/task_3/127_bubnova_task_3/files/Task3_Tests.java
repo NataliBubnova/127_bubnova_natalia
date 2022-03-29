@@ -208,5 +208,17 @@ public class Task3_Tests extends Assert {
         sorter.sort(array, comparator);
         assertArrayEquals(new Integer[]{1, 2}, array);
     }
-    
+    @Test
+    public void quickSort_GenerateQuickSort_SortAgain(){
+        QuickSort<Integer> sorter = new QuickSort<>();
+        Integer[] array = {1, 3, 4, 5, 3, 7, 9};
+        MyComparator<Integer> comparator = new MyComparator<Integer>() {
+            @Override
+            public int compare(Integer first, Integer second) {
+                return first - second;
+            }
+        };
+        sorter.sort(array, comparator);
+        assertArrayEquals(new Integer[]{1, 3, 3, 4, 5, 7, 9}, array);
+    }
 }
