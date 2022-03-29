@@ -24,7 +24,7 @@ public class Task1_Tests extends Assert{
     }
     @Test
     public void pushFront_EmptyDoubleLinkedList_TryToDialDifferentNumber(){
-        DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
+        DoubleLinkedList<Integer> list = new DoubleLinkedList<Integer>();
         list.pushFront(1);
         try {
             list.get(2);
