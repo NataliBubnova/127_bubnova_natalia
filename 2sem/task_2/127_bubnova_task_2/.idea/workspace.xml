@@ -30,27 +30,57 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../task_1" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.Task2_Tests.bubbleSort_CreateMyBubbleSort_TryToSortDifferentNumbers">
-    <configuration name="Task2_Tests.bubbleSort_CreateMyBubbleSort_TryToSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Task2_Tests.insertionSort_GenerateInsertionSort_CompareSameArrays">
+    <configuration name="Task2_Tests.bubbleSort_GenerateBubbleSort_CompareSameArrays" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="task_2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task2_Tests" />
-      <option name="METHOD_NAME" value="bubbleSort_CreateMyBubbleSort_TryToSort" />
+      <option name="METHOD_NAME" value="bubbleSort_GenerateBubbleSort_CompareSameArrays" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task2_Tests.bubbleSort_CreateMyBubbleSort_TryToSortDifferentNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task2_Tests.bubbleSort_GenerateBubbleSort_CompareSmallArrays" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="task_2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task2_Tests" />
-      <option name="METHOD_NAME" value="bubbleSort_CreateMyBubbleSort_TryToSortDifferentNumbers" />
+      <option name="METHOD_NAME" value="bubbleSort_GenerateBubbleSort_CompareSmallArrays" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task2_Tests.bubbleSort_GenerateBubbleSort_ToSortLongerArrayWithVariousNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task_2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task2_Tests" />
+      <option name="METHOD_NAME" value="bubbleSort_GenerateBubbleSort_ToSortLongerArrayWithVariousNumbers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task2_Tests.insertionSort_CreateMyInsertionSort_TryToCompareTheSameArrays" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task_2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task2_Tests" />
+      <option name="METHOD_NAME" value="insertionSort_CreateMyInsertionSort_TryToCompareTheSameArrays" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task2_Tests.insertionSort_GenerateInsertionSort_CompareSameArrays" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task_2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task2_Tests" />
+      <option name="METHOD_NAME" value="insertionSort_GenerateInsertionSort_CompareSameArrays" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -58,8 +88,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Task2_Tests.bubbleSort_CreateMyBubbleSort_TryToSortDifferentNumbers" />
-        <item itemvalue="JUnit.Task2_Tests.bubbleSort_CreateMyBubbleSort_TryToSort" />
+        <item itemvalue="JUnit.Task2_Tests.insertionSort_GenerateInsertionSort_CompareSameArrays" />
+        <item itemvalue="JUnit.Task2_Tests.insertionSort_CreateMyInsertionSort_TryToCompareTheSameArrays" />
+        <item itemvalue="JUnit.Task2_Tests.bubbleSort_GenerateBubbleSort_CompareSmallArrays" />
+        <item itemvalue="JUnit.Task2_Tests.bubbleSort_GenerateBubbleSort_ToSortLongerArrayWithVariousNumbers" />
+        <item itemvalue="JUnit.Task2_Tests.bubbleSort_GenerateBubbleSort_CompareSameArrays" />
       </list>
     </recent_temporary>
   </component>
