@@ -16,3 +16,12 @@ DynamicArray|21|if(newSize > 0) -> if(newSize < 0)|changeTheSize_GenerateArrayAn
 DynamicArray|27|newSize = size -> size = newSize|changeTheSize_GenerateArrayAndResizeIt_CheckSize
 DynamicArray|30|if(index < 0 || index > size) -> if(index < 0 || index >= size)|receive_TryToReceiveIndexOutOfBorder_VerifyException
 DynamicArray|35|if(index < 0 || index > size) -> if(index < 0 || index >= size)|kit_TryToKitIndexOutOfBorder_VerifyException
+DynamicArray|40|if(index < 0 || index > size) -> if(index < 0 || index >= size)|paste_TryToPastetValueOutOfBorder_VerifyException
+DynamicArray|15|data = new Object[capacity] -> data = new Object[size]|kit_TryToKitNumbers_VerifyValues
+DynamicArray|42|if(capacity < size) { -> if(capacity <= size) {|paste_TryToPasteNumber_VerifyNewValue
+DynamicArray|49|data[size] = value -> data[index] = value;|paste_TryToPasteNumber_VerifyNewValue
+DynamicArray|52|if(capacity < size) { -> if(capacity <= size) {|pushBack_TryToPushBack_VerifyValues
+DynamicArray|56|data[capacity] = value; -> data[size] = value;|pushBack_TryToPushBack_VerifyValues
+DynamicArray|60|if(size < 0) -> if(size <= 0)|popWindow_EmptyArray_VerifyException
+DynamicArray|66|if(index < 0 || index > size) -> if(index < 0 || index >= size)|delete_TryToDeleteOut_VerifyException
+

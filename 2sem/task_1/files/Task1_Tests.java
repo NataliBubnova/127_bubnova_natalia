@@ -123,18 +123,16 @@ public class Task1_Tests extends Assert{
         assertEquals(1, head);
     }
     @Test
-    public void pasteListAfter_GenerationTwoListsAndUnite_CheckValues(){
+    public void insertListBefore_TryToInsertListBefore_CheckValues(){
         DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
-        list.pushFront(1);
+        list.pushFront(4);
         list.pushFront(5);
         list.pushFront(6);
-
         DoubleLinkedList<Integer> list1 = new DoubleLinkedList<>();
+        list1.pushFront(1);
         list1.pushFront(2);
         list1.pushFront(3);
-        list1.pushFront(4);
-        list.insertListAfter(list.get(0), list1);
-
+        list.insertListBefore(list.get(0), list1);
         int num1 = ((Node<Integer>)list.get(0)).getData();
         assertEquals(1, num1);
         num1 = ((Node<Integer>)list.get(1)).getData();
@@ -298,4 +296,119 @@ public class Task1_Tests extends Assert{
             assertEquals("Index out of bounds", some.getMessage());
         }
     }
+    @Test
+    public void paste_TryToPasteValueOutOfBounds_VerifyException(){
+        DynamicArray<Integer> array = new DynamicArray<>(5);
+        try {
+            array.insert(6,10);
+            fail();
+        }
+        catch (IndexOutOfBoundsException some) {
+            assertEquals("Index out of bounds", some.getMessage());
+        }
+    }
+    @Test
+    public void paste_TryToPastetValueOutOfBorder_VerifyException(){
+        DynamicArray<Integer> array = new DynamicArray<>(5);
+        try {
+            array.insert(5,10);
+            fail();
+        }
+        catch (IndexOutOfBoundsException some) {
+            assertEquals("Index out of bounds", some.getMessage());
+        }
+    }
+    @Test
+    public void kit_TryToKitNumbers_VerifyValues(){
+        DynamicArray<Integer> array = new DynamicArray<>(5);
+        array.set(0, 1);
+        array.set(1, 2);
+        array.set(2, 3);
+        array.set(3, 4);
+        array.set(4, 5);
+        assertEquals(1, array.get(0).intValue());
+        assertEquals(2, array.get(1).intValue());
+        assertEquals(3, array.get(2).intValue());
+        assertEquals(4, array.get(3).intValue());
+        assertEquals(5, array.get(4).intValue());
+    }
+    @Test
+    public void paste_TryToPasteNumber_VerifyNewValue(){
+        DynamicArray<Integer> array = new DynamicArray<>(5);
+        array.set(0, 1);
+        array.set(1, 2);
+        array.set(2, 3);
+        array.set(3, 4);
+        array.set(4, 5);
+        array.insert(4, 100);
+        assertEquals(1, array.get(0).intValue());
+        assertEquals(2, array.get(1).intValue());
+        assertEquals(3, array.get(2).intValue());
+        assertEquals(4, array.get(3).intValue());
+        assertEquals(100, array.get(4).intValue());
+    }
+    @Test
+    public void pushBack_TryToPushBack_VerifyValues(){
+        DynamicArray<Integer> array = new DynamicArray<>(5);
+        array.set(0, 1);
+        array.set(1, 2);
+        array.set(2, 3);
+        array.set(3, 4);
+        array.set(4, 5);
+        array.pushBack(6);
+        array.pushBack(7);
+        assertEquals(1, array.get(0).intValue());
+        assertEquals(2, array.get(1).intValue());
+        assertEquals(3, array.get(2).intValue());
+        assertEquals(4, array.get(3).intValue());
+        assertEquals(5, array.get(4).intValue());
+        assertEquals(6, array.get(5).intValue());
+        assertEquals(7, array.get(6).intValue());
+    }
+    @Test
+    public void popWindow_EmptyArray_VerifyException(){
+        DynamicArray<Integer> array = new DynamicArray<>(0);
+        try {
+            array.popBack();
+            fail();
+        }
+        catch (Exception some) {
+            assertEquals("Array is empty", some.getMessage());
+        }
+    }
+    @Test
+    public void popBack_CheckCountArray(){
+        DynamicArray<Integer> array = new DynamicArray<>(5);
+        array.popBack();
+        assertEquals(4, array.getSize());
+    }
+    @Test
+    public void delete_TryToDeleteOutOfBounds_VerifyException(){
+        DynamicArray<Integer> array = new DynamicArray<>(5);
+        try {
+            array.remove(6);
+            fail();
+        }
+        catch (Exception some) {
+            assertEquals("Index out of bounds", some.getMessage());
+        }
+    }
+    @Test
+    public void delete_TryToDeleteOut_VerifyException(){
+        DynamicArray<Integer> array = new DynamicArray<>(5);
+        try {
+            array.remove(5);
+            fail();
+        }
+        catch (Exception some) {
+            assertEquals("Index out of bounds", some.getMessage());
+        }
+    }
+    @Test
+    public void delete_TryToDelete_VerifySize(){
+        DynamicArray<Integer> array = new DynamicArray<>(5);
+        array.remove(3);
+        assertEquals(4, array.getSize());
+    }
+
 }
