@@ -35,12 +35,12 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.Task3_Tests.mergeSort_GenerateMergeSort_SortBigArray">
-    <configuration name="Task3_Tests.mergeSort_CreateNewMergeSort_TryToSortThreeItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Task3_Tests.heapSort_GenerateHeapSort_CompareTwoPositions">
+    <configuration name="Task3_Tests.heapSort_GenerateHeapSort_CompareTwoPositions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="127_bubnova_task_3" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task3_Tests" />
-      <option name="METHOD_NAME" value="mergeSort_CreateNewMergeSort_TryToSortThreeItems" />
+      <option name="METHOD_NAME" value="heapSort_GenerateHeapSort_CompareTwoPositions" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -88,11 +88,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Task3_Tests.heapSort_GenerateHeapSort_CompareTwoPositions" />
         <item itemvalue="JUnit.Task3_Tests.mergeSort_GenerateMergeSort_SortBigArray" />
         <item itemvalue="JUnit.Task3_Tests.mergeSort_GenerateMergeSort_SortThreeReversedPositions" />
         <item itemvalue="JUnit.Task3_Tests.mergeSort_CreateNewMergeSort_TryToSortThreeReversedItems" />
         <item itemvalue="JUnit.Task3_Tests.mergeSort_GenerateMergeSort_SortThreePositions" />
-        <item itemvalue="JUnit.Task3_Tests.mergeSort_CreateNewMergeSort_TryToSortThreeItems" />
       </list>
     </recent_temporary>
   </component>
