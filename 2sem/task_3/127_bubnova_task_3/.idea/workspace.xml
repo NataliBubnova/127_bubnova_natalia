@@ -35,52 +35,52 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.Task3_Tests.quickSort_CreateNewQuickSort_TryToSortFourReversedItems">
-    <configuration name="Task3_Tests.quickSort_CreateNewQuickSort_TryToSortFourReversedItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Task3_Tests.mergeSort_GenerateMergeSort_SortThreeReversedPositions">
+    <configuration name="Task3_Tests.mergeSort_CreateNewMergeSort_TryToSortThreeItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="127_bubnova_task_3" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task3_Tests" />
-      <option name="METHOD_NAME" value="quickSort_CreateNewQuickSort_TryToSortFourReversedItems" />
+      <option name="METHOD_NAME" value="mergeSort_CreateNewMergeSort_TryToSortThreeItems" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task3_Tests.quickSort_CreateNewQuickSort_TryToSortThreeItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task3_Tests.mergeSort_CreateNewMergeSort_TryToSortThreeReversedItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="127_bubnova_task_3" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task3_Tests" />
-      <option name="METHOD_NAME" value="quickSort_CreateNewQuickSort_TryToSortThreeItems" />
+      <option name="METHOD_NAME" value="mergeSort_CreateNewMergeSort_TryToSortThreeReversedItems" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task3_Tests.quickSort_CreateNewQuickSort_TryToSortTwoItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task3_Tests.mergeSort_GenerateMergeSort_SortThreePositions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="127_bubnova_task_3" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task3_Tests" />
-      <option name="METHOD_NAME" value="quickSort_CreateNewQuickSort_TryToSortTwoItems" />
+      <option name="METHOD_NAME" value="mergeSort_GenerateMergeSort_SortThreePositions" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task3_Tests.quickSort_GenerateQuickSort_CompareArraysThreePositions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task3_Tests.mergeSort_GenerateMergeSort_SortThreeReversedPositions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="127_bubnova_task_3" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task3_Tests" />
-      <option name="METHOD_NAME" value="quickSort_GenerateQuickSort_CompareArraysThreePositions" />
+      <option name="METHOD_NAME" value="mergeSort_GenerateMergeSort_SortThreeReversedPositions" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task3_Tests.quickSort_GenerateQuickSort_SortTwoPositions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task3_Tests.mergeSort_GenerateMergeSort_SortTwoPositions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="127_bubnova_task_3" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task3_Tests" />
-      <option name="METHOD_NAME" value="quickSort_GenerateQuickSort_SortTwoPositions" />
+      <option name="METHOD_NAME" value="mergeSort_GenerateMergeSort_SortTwoPositions" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -88,11 +88,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Task3_Tests.quickSort_CreateNewQuickSort_TryToSortFourReversedItems" />
-        <item itemvalue="JUnit.Task3_Tests.quickSort_CreateNewQuickSort_TryToSortThreeItems" />
-        <item itemvalue="JUnit.Task3_Tests.quickSort_GenerateQuickSort_SortTwoPositions" />
-        <item itemvalue="JUnit.Task3_Tests.quickSort_CreateNewQuickSort_TryToSortTwoItems" />
-        <item itemvalue="JUnit.Task3_Tests.quickSort_GenerateQuickSort_CompareArraysThreePositions" />
+        <item itemvalue="JUnit.Task3_Tests.mergeSort_GenerateMergeSort_SortThreeReversedPositions" />
+        <item itemvalue="JUnit.Task3_Tests.mergeSort_CreateNewMergeSort_TryToSortThreeReversedItems" />
+        <item itemvalue="JUnit.Task3_Tests.mergeSort_GenerateMergeSort_SortThreePositions" />
+        <item itemvalue="JUnit.Task3_Tests.mergeSort_CreateNewMergeSort_TryToSortThreeItems" />
+        <item itemvalue="JUnit.Task3_Tests.mergeSort_GenerateMergeSort_SortTwoPositions" />
       </list>
     </recent_temporary>
   </component>
