@@ -2,6 +2,7 @@ import org.junit.*;
 public class Task1_Tests extends Assert{
 
     private int getIntValue(ListNode<Integer> item) {
+
         return ((Node<Integer>) item).getData();
     }
 
@@ -18,8 +19,10 @@ public class Task1_Tests extends Assert{
         try {
             list.get(1);
             fail();
-        } catch (IndexOutOfBoundsException e)
+        } catch (IndexOutOfBoundsException e) {
             assertTrue(true);
+        }
+
     }
     @Test
     public void pushElements_ThreeElements_FirstElementIsCorrect() {
@@ -405,9 +408,10 @@ public class Task1_Tests extends Assert{
         try {
             array.get(10);
             fail();
-        } catch (IndexOutOfBoundsException e)
+        }
+        catch (IndexOutOfBoundsException e) {
             assertEquals("Index out of bounds", e.getMessage());
-
+        }
     }
     @Test
     public void generateArray_SettingValueOutOfRange_ReceivingIndexOutOfRange() {
@@ -443,13 +447,94 @@ public class Task1_Tests extends Assert{
             fail();
         }
     }
+    @Test
+    public void paste_PasteMeaningOutOfRange_ReceivingIndexOutOfRange() {
+        DynamicArray<Integer> array = new DynamicArray<>(10);
+        try {
+            array.insert(10, 1);
+            fail();
+        } catch (IndexOutOfBoundsException e) {
+            assertEquals("Index out of bounds", e.getMessage());
+        }
+    }
+    @Test
+    public void paste_PasteMeaning_MeaningAreTrue() {
+        try {
+            DynamicArray<Integer> array = new DynamicArray<>(10);
+            array.set(0, 1);
+            array.set(1, 2);
+            array.set(2, 3);
+            array.insert(1, 5);
 
+            assertEquals(1, array.get(0).intValue());
+            assertEquals(5, array.get(1).intValue());
+            assertEquals(2, array.get(2).intValue());
+            assertEquals(3, array.get(3).intValue());
+        }
+        catch (Exception e){
+            fail();
+        }
+    }
+    @Test
+    public void pushBack_Meaning_MeaningsAreTrue() {
+        DynamicArray<Integer> array = new DynamicArray<>(10);
+        array.set(0, 1);
+        array.set(1, 2);
+        array.set(2, 3);
+        array.pushBack(5);
 
+        assertEquals(1, array.get(0).intValue());
+        assertEquals(2, array.get(1).intValue());
+        assertEquals(3, array.get(2).intValue());
+        assertEquals(5, array.get(10).intValue());
+    }
+    @Test
+    public void leanBack_fromEmptyArray_ReceivingUnsupportedTransactionsExclusion() {
+        try {
+            DynamicArray<Integer> array = new DynamicArray<>(0);
+            array.popBack();
+            fail();
+        } catch (Exception e) {
+            assertEquals("Array is empty", e.getMessage());
+        }
+    }
+    @Test
+    public void leanBack_ReceivingleanedBackValue_ReceivingExclusion() {
+        try {
+            DynamicArray<Integer> array = new DynamicArray<>(3);
+            array.set(0, 1);
+            array.set(1, 2);
+            array.set(2, 3);
+            array.popBack();
+            array.get(2);
+            fail();
+        } catch (Exception e) {
+            assertEquals("Index out of bounds", e.getMessage());
+        }
+    }
+    @Test
+    public void delete_IndexOutOfRound_ReceivingIndexOutOfRoundExclusion() {
+        try {
+            DynamicArray<Integer> array = new DynamicArray<>(3);
+            array.set(0, 1);
+            array.set(1, 2);
+            array.set(2, 3);
+            array.remove(3);
+            fail();
+        } catch (Exception e) {
+            assertEquals("Index out of bounds", e.getMessage());
+        }
+    }
+    @Test
+    public void delete_OneMeaning_MeaningsAreTrue() {
+        DynamicArray<Integer> array = new DynamicArray<>(10);
+        array.set(0, 1);
+        array.set(1, 2);
+        array.set(2, 3);
+        array.remove(1);
 
+        assertEquals(1, array.get(0).intValue());
+        assertEquals(3, array.get(1).intValue());
 
-
-
-
-
-
+    }
 }

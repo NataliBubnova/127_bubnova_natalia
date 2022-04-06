@@ -35,7 +35,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.Task1_Tests.pushFront_PushFrontToEmptyList_EmptyIsFalse">
+  <component name="RunManager" selected="JUnit.Task1_Tests">
     <configuration name="Task1_Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="task_1" />
       <option name="PACKAGE_NAME" value="" />
@@ -55,21 +55,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1_Tests.pasteListAfter_GenerationTwoListsAndUnite_CheckValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="task_1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="pasteListAfter_GenerationTwoListsAndUnite_CheckValues" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Task1_Tests.pushFront_EmptyDoubleLinkedList_TryToDialDifferentNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
       <option name="METHOD_NAME" value="pushFront_EmptyDoubleLinkedList_TryToDialDifferentNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task1_Tests.pushFront_EmptyList_False" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
+      <option name="METHOD_NAME" value="pushFront_EmptyList_False" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -87,11 +87,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Task1_Tests.pushFront_PushFrontToEmptyList_EmptyIsFalse" />
         <item itemvalue="JUnit.Task1_Tests" />
+        <item itemvalue="JUnit.Task1_Tests.pushFront_EmptyList_False" />
+        <item itemvalue="JUnit.Task1_Tests.pushFront_PushFrontToEmptyList_EmptyIsFalse" />
         <item itemvalue="JUnit.Task1_Tests.pushFront_EmptyDoubleLinkedList_TryToDialDifferentNumber" />
         <item itemvalue="JUnit.Task1_Tests.insertListBefore_TryToInsertListBefore_CheckValues" />
-        <item itemvalue="JUnit.Task1_Tests.pasteListAfter_GenerationTwoListsAndUnite_CheckValues" />
       </list>
     </recent_temporary>
   </component>

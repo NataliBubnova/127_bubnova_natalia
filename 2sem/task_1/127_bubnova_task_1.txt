@@ -22,5 +22,11 @@ DynamicArray.java | 35 | if(index < 0 || index > size) -> if(index < 0 || index 
 DynamicArray.java | 15 | data = new Object[capacity]; -> data = new Object[size]; | establishValues_EstablishThreeValues_ValuesAreTrue
 DynamicArray.java | 21 | if(newSize > 0) -> if(newSize < 0) | changeSize_ChanceSizeArray_SizeIsTrue
 DynamicArray.java | 27 | newSize = size; -> size = newSize; | changeSize_ChanceSizeArray_SizeIsTrue
-
+DynamicArray.java | 40 | if(index < 0 || index > size) -> if(index < 0 || index >= size) | paste_PasteMeaningOutOfRange_ReceivingIndexOutOfRange
+DynamicArray.java | 42 | (capacity < size) {  -> if(capacity <= size) { | paste_PasteMeaning_MeaningAreTrue
+DynamicArray.java | 49 | data[size] = value; -> data[index] = value; | paste_PasteMeaning_MeaningAreTrue
+DynamicArray.java | 52 | if(capacity < size) { -> if(capacity <= size) { | pushBack_Meaning_MeaningsAreTrue
+DynamicArray.java | 56 | data[capacity] = value; -> data[size] = value; | pushBack_Meaning_MeaningsAreTrue
+DynamicArray.java | 60 | if(size < 0) -> if(size <= 0) | leanBack_fromEmptyArray_ReceivingUnsupportedTransactionsExclusion
+DynamicArray.java | 66 | if(index < 0 || index > size) -> if(index < 0 || index >= size) | delete_IndexOutOfRound_ReceivingIndexOutOfRoundExclusion
 

@@ -71,6 +71,7 @@ public class DynamicArray<T> {
         data[size] = null;
     }
     public int getSize() {
+
         return size;
     }
 }
