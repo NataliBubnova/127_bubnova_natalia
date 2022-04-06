@@ -13,3 +13,14 @@ DoubleLinkedList.java | 48 | node.getNext().setNext(node.getPrev()); -> node.get
 DoubleLinkedList.java | 59 |  -> size += list.getSize(); | pasteList_afterFirstElement_SizeIsCorrect
 DoubleLinkedList.java | 55 | list.getHead().setNext(node); -> list.getHead().setPrev(node); | pasteList_afterFirstElement_ElementsAreCorrect
 DoubleLinkedList.java | 56 | list.getTail().setPrev(node.getNext()); -> list.getTail().setNext(node.getNext()); | pasteList_afterFirstElement_ElementsAreCorrect
+DoubleLinkedList.java | 70 | -> size += list.getSize(); | pasteList_beforeFirstElement_SizeIsTrue
+DoubleLinkedList.java | 66 | list.getHead().setNext(node.getPrev()); -> list.getHead().setPrev(node.getPrev()); | pasteList_beforeFirstElement_ElementsAreTrue
+DoubleLinkedList.java | 67 | list.getTail().setPrev(node); -> list.getTail().setNext(node); | pasteList_beforeFirstElement_ElementsAreTrue
+DynamicArray.java | 11 | size = 1; -> size = DefaultSize; | generateArray_withoutSize_EqualsDefault
+DynamicArray.java | 30 | if(index < 0 || index > size) -> if(index < 0 || index >= size) | generateArray_receivingValueOutOfRange_IndexOutOfRange
+DynamicArray.java | 35 | if(index < 0 || index > size) -> if(index < 0 || index >= size) | generateArray_SettingValueOutOfRange_ReceivingIndexOutOfRange
+DynamicArray.java | 15 | data = new Object[capacity]; -> data = new Object[size]; | establishValues_EstablishThreeValues_ValuesAreTrue
+DynamicArray.java | 21 | if(newSize > 0) -> if(newSize < 0) | changeSize_ChanceSizeArray_SizeIsTrue
+DynamicArray.java | 27 | newSize = size; -> size = newSize; | changeSize_ChanceSizeArray_SizeIsTrue
+
+

@@ -254,6 +254,197 @@ public class Task1_Tests extends Assert{
         list1.insertListAfter(list1.get(2), list2);
         assertEquals(6, getIntValue(list1.getTail()));
     }
+    @Test
+    public void pasteList_beforeFirstElement_SizeIsTrue() {
+        DoubleLinkedList<Integer> list1 = new DoubleLinkedList<>();
+        list1.pushFront(1);
+        list1.pushFront(2);
+        list1.pushFront(3);
+
+        DoubleLinkedList<Integer> list2 = new DoubleLinkedList<>();
+        list2.pushFront(4);
+        list2.pushFront(5);
+        list2.pushFront(6);
+        list1.insertListBefore(list1.get(0), list2);
+        assertEquals(6, list1.getSize());
+    }
+    @Test
+    public void pasteList_beforeFirstElement_HeadIsTrue() {
+        DoubleLinkedList<Integer> list1 = new DoubleLinkedList<>();
+        list1.pushFront(1);
+        list1.pushFront(2);
+        list1.pushFront(3);
+
+        DoubleLinkedList<Integer> list2 = new DoubleLinkedList<>();
+        list2.pushFront(4);
+        list2.pushFront(5);
+        list2.pushFront(6);
+        list1.insertListBefore(list1.get(0), list2);
+        assertEquals(4, getIntValue(list1.getHead()));
+    }
+    @Test
+    public void pasteList_beforeFirstElement_TailIsTrue() {
+        DoubleLinkedList<Integer> list1 = new DoubleLinkedList<>();
+        list1.pushFront(1);
+        list1.pushFront(2);
+        list1.pushFront(3);
+
+        DoubleLinkedList<Integer> list2 = new DoubleLinkedList<>();
+        list2.pushFront(4);
+        list2.pushFront(5);
+        list2.pushFront(6);
+        list1.insertListBefore(list1.get(0), list2);
+        assertEquals(3, getIntValue(list1.getTail()));
+    }
+    @Test
+    public void pasteList_beforeFirstElement_ElementsAreTrue() {
+        DoubleLinkedList<Integer> list1 = new DoubleLinkedList<>();
+        list1.pushFront(1);
+        list1.pushFront(2);
+        list1.pushFront(3);
+
+        DoubleLinkedList<Integer> list2 = new DoubleLinkedList<>();
+        list2.pushFront(4);
+        list2.pushFront(5);
+        list2.pushFront(6);
+
+        list1.insertListBefore(list1.get(0), list2);
+
+        assertEquals(4, getIntValue(list1.get(0)));
+        assertEquals(5, getIntValue(list1.get(1)));
+        assertEquals(6, getIntValue(list1.get(2)));
+        assertEquals(1, getIntValue(list1.get(3)));
+        assertEquals(2, getIntValue(list1.get(4)));
+        assertEquals(3, getIntValue(list1.get(5)));
+    }
+    @Test
+    public void pasteList_beforeSecondElement_ElementsAreTrue() {
+        DoubleLinkedList<Integer> list1 = new DoubleLinkedList<>();
+        list1.pushFront(1);
+        list1.pushFront(2);
+        list1.pushFront(3);
+
+        DoubleLinkedList<Integer> list2 = new DoubleLinkedList<>();
+        list2.pushFront(4);
+        list2.pushFront(5);
+        list2.pushFront(6);
+
+        list1.insertListBefore(list1.get(1), list2);
+
+        assertEquals(1, getIntValue(list1.get(0)));
+        assertEquals(4, getIntValue(list1.get(1)));
+        assertEquals(5, getIntValue(list1.get(2)));
+        assertEquals(6, getIntValue(list1.get(3)));
+        assertEquals(2, getIntValue(list1.get(4)));
+        assertEquals(3, getIntValue(list1.get(5)));
+    }
+    @Test
+    public void pasteList_beforeThirdElement_ElementsAreTrue() {
+        DoubleLinkedList<Integer> list1 = new DoubleLinkedList<>();
+        list1.pushFront(1);
+        list1.pushFront(2);
+        list1.pushFront(3);
+
+        DoubleLinkedList<Integer> list2 = new DoubleLinkedList<>();
+        list2.pushFront(4);
+        list2.pushFront(5);
+        list2.pushFront(6);
+
+        list1.insertListBefore(list1.get(2), list2);
+
+        assertEquals(1, getIntValue(list1.get(0)));
+        assertEquals(2, getIntValue(list1.get(1)));
+        assertEquals(4, getIntValue(list1.get(2)));
+        assertEquals(5, getIntValue(list1.get(3)));
+        assertEquals(6, getIntValue(list1.get(4)));
+        assertEquals(3, getIntValue(list1.get(5)));
+    }
+    @Test
+    public void pasteList_beforeThirdElement_HeadIsTrue() {
+        DoubleLinkedList<Integer> list1 = new DoubleLinkedList<>();
+        list1.pushFront(1);
+        list1.pushFront(2);
+        list1.pushFront(3);
+
+        DoubleLinkedList<Integer> list2 = new DoubleLinkedList<>();
+        list2.pushFront(4);
+        list2.pushFront(5);
+        list2.pushFront(6);
+        list1.insertListBefore(list1.get(2), list2);
+        assertEquals(1, getIntValue(list1.getHead()));
+    }
+    @Test
+    public void pasteList_beforeThirdElement_TailIsTrue() {
+        DoubleLinkedList<Integer> list1 = new DoubleLinkedList<>();
+        list1.pushFront(1);
+        list1.pushFront(2);
+        list1.pushFront(3);
+
+        DoubleLinkedList<Integer> list2 = new DoubleLinkedList<>();
+        list2.pushFront(4);
+        list2.pushFront(5);
+        list2.pushFront(6);
+        list1.insertListBefore(list1.get(2), list2);
+        assertEquals(3, getIntValue(list1.getTail()));
+    }
+    @Test
+    public void generateArray_withoutSize_EqualsDefault() {
+        DynamicArray<Integer> array = new DynamicArray<>();
+
+        assertEquals(1024, array.getSize());
+    }
+    @Test
+    public void generateArray_withSize_SizeIsTrue() {
+        DynamicArray<Integer> array = new DynamicArray<>(10);
+
+        assertEquals(10, array.getSize());
+    }
+    @Test
+    public void generateArray_receivingValueOutOfRange_IndexOutOfRange() {
+        DynamicArray<Integer> array = new DynamicArray<>(10);
+        try {
+            array.get(10);
+            fail();
+        } catch (IndexOutOfBoundsException e)
+            assertEquals("Index out of bounds", e.getMessage());
+
+    }
+    @Test
+    public void generateArray_SettingValueOutOfRange_ReceivingIndexOutOfRange() {
+        DynamicArray<Integer> array = new DynamicArray<>(10);
+        try {
+            array.set(10, 1);
+            fail();
+        } catch (IndexOutOfBoundsException e) {
+            assertEquals("Index out of bounds", e.getMessage());
+        }
+    }
+    @Test
+    public void establishValues_EstablishThreeValues_ValuesAreTrue() {
+        DynamicArray<Integer> array = new DynamicArray<>(10);
+        array.set(0, 1);
+        array.set(1, 2);
+        array.set(2, 3);
+        assertEquals(1, array.get(0).intValue());
+        assertEquals(2, array.get(1).intValue());
+        assertEquals(3, array.get(2).intValue());
+    }
+    @Test
+    public void changeSize_ChanceSizeArray_SizeIsTrue() {
+        try {
+            DynamicArray<Integer> array = new DynamicArray<>(10);
+
+            array.resize(20);
+            assertEquals(20, array.getSize());
+
+            array.resize(10);
+            assertEquals(10, array.getSize());
+        } catch (Exception e) {
+            fail();
+        }
+    }
+
+
 
 
 
