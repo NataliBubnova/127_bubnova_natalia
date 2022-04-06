@@ -1,27 +1,15 @@
-<имя файла>|<номерстроки>|<до> -> <после>|<имятеста>
-DoubleLinkedList|11|return dummy == dummy -> return size == 0|createDoubleLinkedList_GenerateEmpty_EmptyFalse
-DoubleLinkedList|62| -> size += list.getSize()|pasteListAfter_GenerateTwoListsAndUnite_CheckSize
-DoubleLinkedList|55|list.getHead().setNext(node); -> list.getHead().setPrev(node);|pasteListAfter_GenerationTwoListsAndUnite_CheckValues
-DoubleLinkedList|56|list.getTail().setPrev(node.getNext()); -> list.getTail().setNext(node.getNext());|pasteListAfter_GenerationTwoListsAndUnite_CheckValues
-DoubleLinkedList|28|cur = cur.getPrev(); -> cur = cur.getNext();|pushFront_ValuesDoubleLinkedList_ControlValues
-Node|13|this.next = prev; -> this.next = next;|pushFront_ValuesDoubleLinkedList_ControlValues
-Node|14|this.prev = next; -> this.prev = prev;|pushFront_ValuesDoubleLinkedList_ControlValues
-DoubleLinkedList|47|node.getPrev().setPrev(node.getNext()); -> node.getPrev().setNext(node.getNext());|delete_DeleteAElement_CheckValue
-DoubleLinkedList|48|node.getNext().setNext(node.getPrev()); -> node.getNext().setPrev(node.getPrev());|delete_DeleteAElement_CheckValue
-DoubleLinkedList|74| -> size += list.getSize();|pasteListBefore_TryToPasteListBefore_CheckSize
-DoubleLinkedList|67|list.getHead().setNext(node.getPrev()); -> list.getHead().setPrev(node.getPrev());|pasteListBefore_TryToPasteListBefore_CheckValues
-DoubleLinkedList|68|list.getTail().setPrev(node); -> list.getTail().setNext(node);|pasteListBefore_TryToPasteListBefore_CheckValues
-DynamicArray|11|size = 1 -> size = DefaultSize|generateArray_GenerateEmptyArray_CheckSize
-DynamicArray|21|if(newSize > 0) -> if(newSize < 0)|changeTheSize_GenerateArrayAndResizeIt_CheckSize
-DynamicArray|27|newSize = size -> size = newSize|changeTheSize_GenerateArrayAndResizeIt_CheckSize
-DynamicArray|30|if(index < 0 || index > size) -> if(index < 0 || index >= size)|receive_TryToReceiveIndexOutOfBorder_VerifyException
-DynamicArray|35|if(index < 0 || index > size) -> if(index < 0 || index >= size)|kit_TryToKitIndexOutOfBorder_VerifyException
-DynamicArray|40|if(index < 0 || index > size) -> if(index < 0 || index >= size)|paste_TryToPastetValueOutOfBorder_VerifyException
-DynamicArray|15|data = new Object[capacity] -> data = new Object[size]|kit_TryToKitNumbers_VerifyValues
-DynamicArray|42|if(capacity < size) { -> if(capacity <= size) {|paste_TryToPasteNumber_VerifyNewValue
-DynamicArray|49|data[size] = value -> data[index] = value;|paste_TryToPasteNumber_VerifyNewValue
-DynamicArray|52|if(capacity < size) { -> if(capacity <= size) {|pushBack_TryToPushBack_VerifyValues
-DynamicArray|56|data[capacity] = value; -> data[size] = value;|pushBack_TryToPushBack_VerifyValues
-DynamicArray|60|if(size < 0) -> if(size <= 0)|popWindow_EmptyArray_VerifyException
-DynamicArray|66|if(index < 0 || index > size) -> if(index < 0 || index >= size)|delete_TryToDeleteOut_VerifyException
-
+DoubleLinkedList.java | 11 | return dummy == dummy; -> return size == 0; | pushFront_EmptyList_False
+DoubleLinkedList.java | 24 | if(index < 0 || index > size) -> if(index < 0 || index >= size) | pushFront_EmptyList_WhenTryingToGetElementNumberOneAnErrorOccurs
+DoubleLinkedList.java | 28 | cur = cur.getPrev(); -> cur = cur.getNext(); | pushElements_ThreeElements_SecondElementIsCorrect
+DoubleLinkedList.java | 33 | --size; -> ++size; | pushElements_ThreeElements_SecondElementIsCorrect
+DoubleLinkedList.java | 17 | return dummy.getPrev(); -> return dummy.getNext(); | pushElements_ThreeElements_HeadIsCorrect
+DoubleLinkedList.java | 20 | return dummy.getNext(); -> return dummy.getPrev(); | pushElements_ThreeElements_TailIsCorrect
+DoubleLinkedList.java | 41 | return insertBefore(getTail(), data); -> return insertAfter(getTail(), data); | pushElements_ThreeElements_TailIsCorrect
+Node.java | 13 | this.next = prev; -> this.next = next; | pushElements_ThreeElements_TailIsCorrect
+Node.java | 14 | this.prev = next; -> this.prev = prev; |pushElements_ThreeElements_TailIsCorrect
+DoubleLinkedList.java | 44 | return insertBefore(getTail(), data); -> return insertBefore(getHead(), data); | pushElements_BackThreeElements_SecondElementIsCorrect
+DoubleLinkedList.java | 47 | node.getPrev().setPrev(node.getNext()); -> node.getPrev().setNext(node.getNext()); | deleteElement_FirstElement_FirstElementIsCorrect
+DoubleLinkedList.java | 48 | node.getNext().setNext(node.getPrev()); -> node.getNext().setPrev(node.getPrev()); | deleteElement_FirstElement_FirstElementIsCorrect
+DoubleLinkedList.java | 59 |  -> size += list.getSize(); | pasteList_afterFirstElement_SizeIsCorrect
+DoubleLinkedList.java | 55 | list.getHead().setNext(node); -> list.getHead().setPrev(node); | pasteList_afterFirstElement_ElementsAreCorrect
+DoubleLinkedList.java | 56 | list.getTail().setPrev(node.getNext()); -> list.getTail().setNext(node.getNext()); | pasteList_afterFirstElement_ElementsAreCorrect
